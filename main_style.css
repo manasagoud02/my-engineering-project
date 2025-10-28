@@ -1,0 +1,88 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+
+/* Center the logo at the top */
+header {
+  text-align: center;       /* Centers horizontally */
+  padding: 20px 0;          /* Adds space around the logo */
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Style the logo image */
+.logo {
+  width: 120px;             /* Adjust logo size */
+  height: auto;             /* Keep aspect ratio */
+  display: inline-block;    /* Keeps it centered nicely */
+}
+
+    .container {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .roles {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    .role {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #007BFF;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .role:hover {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+    .login-box {
+      display: none; /* hidden by default */
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      width: 300px;
+      margin: 0 auto;
+    }
+    .login-box h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: #0056b3;
+    }

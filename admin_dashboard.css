@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Button Container */
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background: #ffffff20;
+  color: #fff;
+  border: 2px solid #ffffff50;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #fff;
+  color: #4e4376;
+  transform: scale(1.05);
+  border-color: #fff;
+}
+
+/* Sign Out Button (highlighted in red tone) */
+button:last-child {
+  background: #ff4b5c;
+  border-color: #ff4b5c;
+}
+
+button:last-child:hover {
+  background: #ff1f3a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}

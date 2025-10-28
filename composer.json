@@ -1,0 +1,17 @@
+{
+    "name": "ediga_dp2qywm/security_management",
+    "autoload": {
+        "psr-4": {
+            "EdigaDp2qywm\\SecurityManagement\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manasa",
+            "email": "edigamanasagoud@gmail.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^8.8"
+    }
+}

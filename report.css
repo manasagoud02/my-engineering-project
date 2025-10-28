@@ -1,0 +1,167 @@
+/* ==========================================================
+   HOD Outgoing Report - Premium Styling
+   File: report.css
+   ========================================================== */
+
+body {
+  font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* ---------- Header Section ---------- */
+header {
+  text-align: center;
+  padding: 25px 0 10px;
+  background: linear-gradient(135deg, #003366, #004080);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* ---------- Filter Form ---------- */
+form {
+  width: 90%;
+  margin: 0 auto 25px;
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+input[type="submit"],
+button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"] {
+  background-color: #0078d7;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* ---------- Table Styling ---------- */
+table {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  text-align: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background: linear-gradient(135deg, #003366, #004080);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+
+tr:hover {
+  background-color: #eaf3ff;
+  transition: 0.3s;
+}
+
+td[colspan="9"] {
+  color: #777;
+  font-style: italic;
+  background-color: #f9f9f9;
+}
+
+/* ---------- Print Styles ---------- */
+@media print {
+  body {
+    background: white;
+    margin: 0;
+  }
+
+  header {
+    color: black;
+    background: none;
+    box-shadow: none;
+    border-bottom: 2px solid #000;
+  }
+
+  form, button {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  th, td {
+    border: 1px solid black;
+  }
+}
